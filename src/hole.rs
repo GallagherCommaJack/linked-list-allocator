@@ -11,7 +11,7 @@ pub struct HoleList {
 
 impl HoleList {
     /// Creates an empty `HoleList`.
-    pub const fn empty() -> HoleList {
+    pub fn empty() -> HoleList {
         HoleList {
             first: Hole {
                 size: 0,

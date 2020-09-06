@@ -11,16 +11,6 @@ repository = "https://github.com/phil-opp/linked-list-allocator"
 documentation = "https://docs.rs/crate/linked_list_allocator"
 homepage = "http://os.phil-opp.com/kernel-heap.html#a-better-allocator"
 
-[features]
-default = ["use_spin"]
-use_spin = ["spinning_top"]
-alloc_ref = []
-
-[dependencies.spinning_top]
-version = "0.1.0"
-features = ["nightly"]
-optional = true
-
 [package.metadata.release]
 no-dev-version = true
 pre-release-replacements = [
